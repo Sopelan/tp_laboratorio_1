@@ -3,11 +3,13 @@
 #ifndef BIBLOTECA_H_INCLUDED
 #define BIBLOTECA_H_INCLUDED
 int menuOpcion (char mensaje[]);
-int ingresarDato (int a);
-int suma(int a ,int b);
-int resta (int a , int b );
-int multiplicacion (int a , int b );
-int division (int a , int b );
-int factorial(int a , float factorial);
+float ingresarDato (float x);
+float suma(float x ,float y);
+float resta (float x , float y );
+float multiplicacion (float x , float y );
+float division (float x , float y );
+int factorial(int x);
 int respuestaMensaje(float respuesta , char mensaje[]);
+//int respuestafactorial(float respuesta1 , float respuesta2 ,char mensaje1[] , char mensaje2[]);
+#include "bibloteca.c"
 #endif // BIBLOTECA_H_INCLUDED

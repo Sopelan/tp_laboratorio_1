@@ -1,10 +1,15 @@
 # depslib dependency file v1.0
-1554222809 source:c:\users\sopelan1\desktop\tp\trabajo practico\main.c
+1554234108 source:c:\users\sopelan1\desktop\tp\trabajo practico\main.c
 	<stdio.h>
 	<stdlib.h>
 	"bibloteca.h"
 
-1554222886 c:\users\sopelan1\desktop\tp\trabajo practico\bibloteca.h
+1554234191 c:\users\sopelan1\desktop\tp\trabajo practico\bibloteca.h
 	<stdio.h>
 	<stdio.h>
+	"bibloteca.c"
+
+1554234191 c:\users\sopelan1\desktop\tp\trabajo practico\bibloteca.c
+	<stdio.h>
+	<stdlib.h>
 
