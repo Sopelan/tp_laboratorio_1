@@ -9,45 +9,45 @@ int menuOpcion (char mensaje[])
     return opcion;
 
 }
-float ingresarDato (float x)
+float ingresarDato (float numeroX)
 {
     printf("ingrese un numero\n");
-    scanf("%f",&x);
-    return x;
+    scanf("%f",&numeroX);
+    return numeroX;
 }
-float suma(float x ,float y)
+float suma(float numeroX ,float numeroY)
 {
     float resultado;
-    resultado =x+y;
+    resultado = numeroX+numeroY;
     return resultado;
 }
-float resta (float x , float y)
+float resta (float numeroX , float numeroY)
 {
     float resultado;
-    resultado =x-y;
+    resultado = numeroX-numeroY;
     return resultado;
 }
-float multiplicacion (float x , float y)
+float multiplicacion (float numeroX , float numeroY)
 {
     float resultado;
-    resultado =x*y;
+    resultado = numeroX*numeroY;
     return resultado;
 }
-float division (float x , float y)
+float division (float numeroX , float numeroY)
 {
     float resultado;
-    resultado = x/y;
+    resultado = numeroX/numeroY;
     return resultado;
 
 }
-int factorial(int x)
+int factorial(int numeroX)
 {
     int respuesta;
-    if(x == 1)
+    if(numeroX == 1)
     {
         return 1;
     }
-    respuesta = x * factorial(x-1);
+    respuesta = numeroX * factorial(numeroX-1);
     return respuesta;
 }
 int respuestaMensaje(float respuesta , char mensaje[])

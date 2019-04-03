@@ -25,8 +25,8 @@ que contenga las funciones para realizar las cinco operaciones.
 
 int main(void)
 {
-    float a;
-    float b;
+    float numeroA;
+    float numeroB;
     float resSuma;
     float resResta;
     float resMultiplicacion;
@@ -41,55 +41,55 @@ int main(void)
         switch(opcion)
         {
             case 1:
-            a=ingresarDato(a);
+            numeroA=ingresarDato(numeroA);
             break;
             case 2:
-            b=ingresarDato(b);
+            numeroB=ingresarDato(numeroB);
             break;
             case 3:
-            resSuma = suma( a , b);
-            resResta = resta ( a , b );
-            resMultiplicacion = multiplicacion ( a , b );
-            if(b != 0)
+            resSuma = suma( numeroA , numeroB);
+            resResta = resta ( numeroA , numeroB );
+            resMultiplicacion = multiplicacion ( numeroA , numeroB );
+            if(numeroB != 0)
             {
-                resDivision = division ( a , b );
+                resDivision = division ( numeroA , numeroB );
             }
-            if(a > 0)
+            if(numeroA > 0)
             {
-                resFactorialA = factorial( a );
+                resFactorialA = factorial( numeroA );
             }
-            if(b > 0)
+            if(numeroB > 0)
             {
-                resFactorialB = factorial( b );
+                resFactorialB = factorial( numeroB );
             }
             break;
             case 4:
-            respuestaMensaje( resSuma ,"El resultado de A+B es:");
-            respuestaMensaje( resResta ,"El resultado de A-B es:");
-            respuestaMensaje( resMultiplicacion ,"El resultado de A*B es:");
-            if(b == 0)
+            respuestaMensaje( resSuma ,"El resultado de numeroA+numeroB es:");
+            respuestaMensaje( resResta ,"El resultado de numeroA-numeroB es:");
+            respuestaMensaje( resMultiplicacion ,"El resultado de numeroA*numeroB es:");
+            if(numeroB == 0)
             {
                 printf("No es posible dividir por cero\n");
             }
             else
             {
-                respuestaMensaje( resDivision ,"El resultado de A/B es:");
+                respuestaMensaje( resDivision ,"El resultado de numeroA/numeroB es:");
             }
-            if(a > 0)
+            if(numeroA > 0)
             {
-                respuestaMensaje(resFactorialA,"El factorial de A es:");
-            }
-            else
-            {
-                printf("no existe el factorial de A menor a 1\n");
-            }
-            if(b > 0)
-            {
-                respuestaMensaje(resFactorialB,"El factorial de B es:");
+                respuestaMensaje(resFactorialA,"El factorial de numeroA es:");
             }
             else
             {
-                printf("no existe el factorial de B menor a 1\n");
+                printf("no existe el factorial de numeroA menor a 1\n");
+            }
+            if(numeroB > 0)
+            {
+                respuestaMensaje(resFactorialB,"El factorial de numeroB es:");
+            }
+            else
+            {
+                printf("no existe el factorial de numeroB menor a 1\n");
             }
             break;
             case 5:
