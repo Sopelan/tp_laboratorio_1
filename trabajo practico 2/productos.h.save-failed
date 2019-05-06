@@ -1,10 +1,11 @@
-typedef struct{
+typedef struct
+{
     char description[51];
     int code;
     int qty;
     float price;
     int status; /**< Active (1) or Inactive (0)  */
-}Product;
+} Product;
 
 
 void setStatus(Product productArray[],int arrayLenght,int value);

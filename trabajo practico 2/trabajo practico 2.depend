@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1557109364 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"bibloteca.h"
+	"arrayEmployees.h"
+
+1557112683 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 2\arrayemployees.h
+	"arrayEmployees.c"
+
+1557112752 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 2\bibloteca.h
+	<string.h>
+	"time.h"
+	"bibloteca.c"
+
+1557113973 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 2\arrayemployees.c
+
+1557112752 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 2\bibloteca.c
+
