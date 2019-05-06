@@ -50,7 +50,7 @@ int main()
                 salir = 0;
                 break;
             default:
-                printf("numero incorrecto");
+                printf("numero incorrecto\n");
                 break;
         }
         system("pause");
