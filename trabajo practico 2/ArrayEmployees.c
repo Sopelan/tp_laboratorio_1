@@ -1,5 +1,4 @@
 
-
 int initEmployees(Employee list[], int len)
 {
     int i;
@@ -112,7 +111,7 @@ int sortEmployees(Employee list[], int len, int order)
             {
                 if(list[i].isEmpty == OCUPADO && list[j].isEmpty == OCUPADO)
                 {
-                    if(list[i].sector < list[j].sector )
+                    if(list[i].sector > list[j].sector )
                     {
                         persona = list[i];
                         list[i] = list[j];
@@ -120,7 +119,7 @@ int sortEmployees(Employee list[], int len, int order)
                     }
                     else if(list[i].sector == list[j].sector)
                     {
-                        if(strcmp(list[i].lastName,list[j].lastName ) < 0)
+                        if(strcmp(list[i].lastName,list[j].lastName ) > 0)
                         {
                             persona = list[i];
                             list[i] = list[j];
@@ -140,7 +139,7 @@ int sortEmployees(Employee list[], int len, int order)
             {
                 if(list[i].isEmpty == OCUPADO && list[j].isEmpty == OCUPADO)
                 {
-                    if(list[i].sector > list[j].sector )
+                    if(list[i].sector < list[j].sector )
                     {
                         persona = list[i];
                         list[i] = list[j];
@@ -148,7 +147,7 @@ int sortEmployees(Employee list[], int len, int order)
                     }
                     else if(list[i].sector == list[j].sector)
                     {
-                        if(strcmp(list[i].lastName,list[j].lastName ) > 0)
+                        if(strcmp(list[i].lastName,list[j].lastName ) < 0)
                         {
                              persona = list[i];
                             list[i] = list[j];
@@ -203,11 +202,11 @@ int printEmployees(Employee list[], int len)
         }
     }
     promedio = salario/divido;
-    printf("\n%10s\t%10s\t%10s\t%10s\t%10s\n","id","apellido","nombre","sector","salario");
+    printf("\n%4s\t%10s\t%10s\t%10s\t%10s\n","id","apellido","nombre","sector","salario");
     for(i = 0 ; i < len ; i++ )
     {
         if(list[i].isEmpty == OCUPADO)
-            printf("%10d\t%10s\t%10s\t%10d\t%10f\n",list[i].id,list[i].lastName,list[i].name,list[i].sector,list[i].salary);
+            printf("%4d\t%10s\t%10s\t%10d\t%10f\n",list[i].id,list[i].lastName,list[i].name,list[i].sector,list[i].salary);
     }
     printf("\nempleados superando el promedio de todos los salarios\n");
     for(i = 0 ; i < len ; i++ )
@@ -216,14 +215,14 @@ int printEmployees(Employee list[], int len)
         {
             if(list[i].salary >= promedio)
             {
-                printf("%10d\t%10s\t%10s\t%10d\t%10f\n",list[i].id,list[i].lastName,list[i].name,list[i].sector,list[i].salary);
+                printf("%4d\t%10s\t%10s\t%10d\t%10f\n",list[i].id,list[i].lastName,list[i].name,list[i].sector,list[i].salary);
                 superaPromedio = superaPromedio + 1;
             }
         }
     }
-    printf("\nla suma de los salarios de los empleados: %f\n",salario);
-    printf("el promedio de los salarios de los empleados: %f\n",promedio);
-    printf("la cantidad de empleado que superan el promedio de todos los salarios: %f\n",superaPromedio);
+    printf("\nla suma de los salarios de los empleados: %.2f\n",salario);
+    printf("el promedio de los salarios de los empleados: %.2f\n",promedio);
+    printf("la cantidad de empleado que superan el promedio de todos los salarios es:%.0f\n",superaPromedio);
     return 0;
 }
 int findEmptyPlace(Employee list[],int len)
