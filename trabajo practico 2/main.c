@@ -23,7 +23,6 @@ int main()
             system("pause");
             system("cls");
             printf("1.ALTA\n2.MODIFICAR\n3.BAJA\n4.INFORMAR\n5.SALIR\n");
-            getStringNumero("eligir su opcion\n",opciones);
         }
 
         opcion = atoi(opciones);

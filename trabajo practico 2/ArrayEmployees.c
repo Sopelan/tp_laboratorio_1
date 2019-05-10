@@ -108,7 +108,7 @@ int sortEmployees(Employee list[], int len, int order)
     case 1:
         for(i = 0 ; i < len - 1; i++)
         {
-            for(j = i + 1 ; j < len ; j++)
+            for(j = i + 1  ; j < len ; j++)
             {
                 if(list[i].isEmpty == OCUPADO && list[j].isEmpty == OCUPADO)
                 {
@@ -118,11 +118,15 @@ int sortEmployees(Employee list[], int len, int order)
                         list[i] = list[j];
                         list[j] = persona;
                     }
-                    else if(strcmp(list[i].lastName,list[j].lastName ) < 0)
+                    else if(list[i].sector == list[j].sector)
                     {
-                        persona = list[i];
-                        list[i] = list[j];
-                        list[j] = persona;
+                        if(strcmp(list[i].lastName,list[j].lastName ) < 0)
+                        {
+                            persona = list[i];
+                            list[i] = list[j];
+                            list[j] = persona;
+                        }
+
                     }
 
                 }
@@ -130,7 +134,7 @@ int sortEmployees(Employee list[], int len, int order)
         }
         break;
     case 2:
-        for(i = 0 ; i < len - 1; i++)
+        for(i = 0 ; i < len -1 ; i++)
         {
             for(j = i + 1 ; j < len ; j++)
             {
@@ -142,11 +146,15 @@ int sortEmployees(Employee list[], int len, int order)
                         list[i] = list[j];
                         list[j] = persona;
                     }
-                    else if(strcmp(list[i].lastName,list[j].lastName ) > 0)
+                    else if(list[i].sector == list[j].sector)
                     {
-                        persona = list[i];
-                        list[i] = list[j];
-                        list[j] = persona;;
+                        if(strcmp(list[i].lastName,list[j].lastName ) > 0)
+                        {
+                             persona = list[i];
+                            list[i] = list[j];
+                            list[j] = persona;
+                        }
+
                     }
 
                 }
