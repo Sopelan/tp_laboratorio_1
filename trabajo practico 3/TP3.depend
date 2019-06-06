@@ -61,7 +61,7 @@
 
 1559823186 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\linkedlist.h
 
-1559823186 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\employee.h
+1559830868 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\employee.h
 
 1559823186 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\employee.c
 
@@ -85,7 +85,7 @@
 	<string.h>
 	"time.h"
 
-1559825439 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\main.c
+1559828309 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
