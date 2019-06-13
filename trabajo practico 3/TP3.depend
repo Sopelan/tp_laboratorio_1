@@ -53,25 +53,30 @@
 	"LinkedList.h"
 	"Employee.h"
 
-1559824451 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\controller.c
+1560426426 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\controller.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
 
-1559823186 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\linkedlist.h
+1560426426 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\linkedlist.h
 
-1559830868 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\employee.h
+1560426426 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\employee.h
 
-1559823186 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\employee.c
+1560427194 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\employee.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
 
-1559823186 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\parser.c
+1560426426 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
 
-1559824625 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\bibloteca.c
+1560426426 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\bibloteca.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
@@ -79,13 +84,13 @@
 	"Employee.h"
 	"bibloteca.h"
 
-1559823186 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\controller.h
+1560426426 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\controller.h
 
-1559824625 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\bibloteca.h
+1560426426 c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\bibloteca.h
 	<string.h>
 	"time.h"
 
-1559828309 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\main.c
+1560428460 source:c:\users\alumno\desktop\tp_laboratorio_1\trabajo practico 3\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"

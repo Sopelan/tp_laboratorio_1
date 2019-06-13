@@ -23,6 +23,7 @@ int main()
 {
     int option;
     LinkedList* listaEmpleados = ll_newLinkedList();
+
     do{
         option = getValidInt("\nMenu:\n1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).\n2. Cargar los datos de los empleados desde el archivo data.csv (modo binario).\n3. Alta de empleado\n4. Modificar datos de empleado\n5. Baja de empleado\n6. Listar empleado\n7. Ordenar empleados\n8. Guardar los datos de los empleados en el archivo data.csv (modo texto).\n9. Guardar los datos de los empleados en el archivo data.csv (modo binario).\n10. Salir\n","tiene que ser un numero\n",1,10);
         switch(option)
@@ -61,5 +62,6 @@ int main()
         system("pause");
         system("cls");
     }while(option != 10);
+
     return 0;
 }
