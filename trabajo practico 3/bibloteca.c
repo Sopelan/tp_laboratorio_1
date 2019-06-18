@@ -86,7 +86,9 @@ int telefono(char str[])
 void getString(char mensaje[] , char input[] )
 {
     printf("%s" , mensaje );
+    fflush(stdin);
     gets(input);
+
 }
 int getStringLetras(char mensaje[],char input[])
 {

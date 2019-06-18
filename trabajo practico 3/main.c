@@ -70,7 +70,10 @@ int main()
     Employee* persona;
     Employee p;
     persona = &p;
-    persona = employee_newParametros("2",nombre,horas,sueldo);
-    printf("%s - %s",persona->nombre,nombre);
+    if((persona = employee_newParametros("2",nombre,sueldo,horas))!=NULL)
+    {
+        printf("%s-%d-%d",persona->nombre,persona->sueldo,persona->horasTrabajadas);
+    }
+    //printf("%s - %s",persona->nombre,nombre);
     return 0;
 }

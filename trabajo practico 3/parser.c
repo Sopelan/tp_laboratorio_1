@@ -12,7 +12,11 @@
  */
 int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 {
-
+    char* nombre;
+    char* sueldo;
+    char* id;
+    char* horasTrabajadas;
+    fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",)
     return 1;
 }
 
