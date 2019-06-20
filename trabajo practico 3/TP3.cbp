@@ -48,6 +48,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="bibloteca.h" />
+		<Unit filename="data.csv" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

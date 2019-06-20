@@ -56,32 +56,32 @@
 
 1560547364 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\controller.h
 
-1560547857 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\employee.h
+1560987346 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\employee.h
 
 1560547364 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\bibloteca.h
 	<string.h>
 	"time.h"
 
-1560547364 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\controller.c
+1561005494 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\controller.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
 
-1560553055 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\main.c
+1560985123 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\main.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Controller.h"
 	"Employee.h"
 
-1560547364 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\parser.c
+1560987962 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
 	"Employee.h"
 
-1560552499 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\employee.c
+1561006054 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\trabajo practico 3\employee.c
 	<stdio.h>
 	<stdlib.h>
 	"LinkedList.h"
