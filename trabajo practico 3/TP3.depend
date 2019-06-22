@@ -89,3 +89,48 @@
 	"Employee.h"
 	<string.h>
 
+1561164393 source:c:\users\mariano\desktop\utn\tp_laboratorio_1\trabajo practico 3\bibloteca.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"bibloteca.h"
+
+1561164393 c:\users\mariano\desktop\utn\tp_laboratorio_1\trabajo practico 3\linkedlist.h
+
+1561164393 c:\users\mariano\desktop\utn\tp_laboratorio_1\trabajo practico 3\controller.h
+
+1561168525 c:\users\mariano\desktop\utn\tp_laboratorio_1\trabajo practico 3\employee.h
+
+1561164393 c:\users\mariano\desktop\utn\tp_laboratorio_1\trabajo practico 3\bibloteca.h
+	<string.h>
+	"time.h"
+
+1561174565 source:c:\users\mariano\desktop\utn\tp_laboratorio_1\trabajo practico 3\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1561164393 source:c:\users\mariano\desktop\utn\tp_laboratorio_1\trabajo practico 3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1561178436 source:c:\users\mariano\desktop\utn\tp_laboratorio_1\trabajo practico 3\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+
+1561174111 source:c:\users\mariano\desktop\utn\tp_laboratorio_1\trabajo practico 3\employee.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	<string.h>
+

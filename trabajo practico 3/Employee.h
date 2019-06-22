@@ -25,4 +25,13 @@ int employee_setSueldo(Employee* this,int sueldo);
 int employee_getSueldo(Employee* this,int* sueldo);
 void print(void);
 void printEmployee(Employee* aux);
+int employee_pedirNombre(Employee* this,char* nombre);
+int employee_pedirHorasTrabajadas(Employee* this,int* horasTrabajadas);
+int employee_pedirSueldo(Employee* this,int* sueldo);
+int ordenarPorId(void* emp1 , void* emp2);
+int ordenarPorNombre(void* empleado1 , void* empleado2);
+int ordenarPorHoras(void* emp1 , void* emp2);
+int ordenarPorSueldo(void* emp1,void* emp2);
+
+
 #endif // employee_H_INCLUDED

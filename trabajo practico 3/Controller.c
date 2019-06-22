@@ -31,9 +31,6 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
             fclose(fp);
         }
 
-
-
-
     return 1;
 }
 
@@ -47,6 +44,21 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
 {
     printf("Cargar los datos de los empleados desde el archivo data.csv (modo binario\n");
+    FILE* fp;
+    int tam;
+    fp = fopen(path,"rb");
+    if(fp == NULL)
+    {
+        printf("El archivo no pudo ser abierto\n");
+        exit(EXIT_FAILURE);
+    }
+    else
+    {
+        printf("El archivo fue abierto exitosamente\n");
+        tam = parser_EmployeeFromBinary(fp,pArrayListEmployee);
+        printf("Cargo un total de %d empleados\n",tam);
+        fclose(fp);
+    }
     return 1;
 }
 
@@ -66,11 +78,11 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
     Employee* aux = employee_new();
     Employee* auxEmp;
 
-    while(!employee_getNombre(aux,aux->nombre))
+    while(!employee_pedirNombre(aux,aux->nombre))
         continue;
-    while(!employee_getHorasTrabajadas(aux,&aux->horasTrabajadas))
+    while(!employee_pedirHorasTrabajadas(aux,&aux->horasTrabajadas))
         continue;
-    while(!employee_getSueldo(aux,&aux->sueldo))
+    while(!employee_pedirSueldo(aux,&aux->sueldo))
         continue;
     while(flag == 0)
     {
@@ -141,15 +153,15 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
     switch(option)
     {
         case 1:
-          if(!employee_getNombre(&emp,emp.nombre))
+          if(!employee_pedirNombre(&emp,emp.nombre))
                 break;
             break;
         case 2:
-            if(!employee_getHorasTrabajadas(&emp,&(emp.horasTrabajadas)))
+            if(!employee_pedirHorasTrabajadas(&emp,&(emp.horasTrabajadas)))
                 break;
             break;
         case 3:
-            if(!employee_getSueldo(&emp,&(emp.sueldo)))
+            if(!employee_pedirSueldo(&emp,&(emp.sueldo)))
                 break;
             break;
         case 4:
@@ -263,9 +275,22 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
     switch(option)
     {
         case 1:
-            option2 = getValidInt("Ordenar de forma\n1.ascendente\n2.descendente\n","tiene que ser un numero\n",1,2);
-            orderId(pArrayListEmployee,option2);
+            option2 = getValidInt("Ordenar de forma\n1.ascendente\n0.descendente\n","tiene que ser un numero\n",0,1);
+            ll_sort(pArrayListEmployee,ordenarPorId,option2);
             break;
+        case 2:
+            option2 = getValidInt("Ordenar de forma\n1.ascendente\n0.descendente\n","tiene que ser un numero\n",0,1);
+            ll_sort(pArrayListEmployee,ordenarPorNombre,option2);
+            break;
+        case 3:
+            option2 = getValidInt("Ordenar de forma\n1.ascendente\n0.descendente\n","tiene que ser un numero\n",0,1);
+            ll_sort(pArrayListEmployee,ordenarPorHoras,option2);
+            break;
+        case 4:
+            option2 = getValidInt("Ordenar de forma\n1.ascendente\n0.descendente\n","tiene que ser un numero\n",0,1);
+            ll_sort(pArrayListEmployee,ordenarPorSueldo,option2);
+            break;
+
     }
     return 1;
 }
