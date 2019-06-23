@@ -228,3 +228,11 @@ int employee_getSueldo(Employee* this,int* sueldo)
     if(this != NULL)
         *sueldo = this->sueldo;
 }
+void printError(void)
+{
+    printf("no se han cargado los archivos\n");
+}
+void printMensaje(void)
+{
+    printf("ya se cargaron los archivos\n");
+}

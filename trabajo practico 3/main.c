@@ -23,37 +23,80 @@ int main()
 {
     int option;
     LinkedList* listaEmpleados = ll_newLinkedList();
-
+    int flag = 0;
     do{
         option = getValidInt("\nMenu:\n1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).\n2. Cargar los datos de los empleados desde el archivo data.csv (modo binario).\n3. Alta de empleado\n4. Modificar datos de empleado\n5. Baja de empleado\n6. Listar empleado\n7. Ordenar empleados\n8. Guardar los datos de los empleados en el archivo data.csv (modo texto).\n9. Guardar los datos de los empleados en el archivo data.csv (modo binario).\n10. Salir\n","tiene que ser un numero\n",1,10);
         switch(option)
         {
             case 1:
-                controller_loadFromText("data.csv",listaEmpleados);
+                if(flag == 0)
+                {
+                    controller_loadFromText("data.csv",listaEmpleados);
+                    flag = 1;
+                }
+                else
+                    printMensaje();
                 break;
             case 2:
-                controller_loadFromBinary("data.csv" ,listaEmpleados);
+                if(flag == 0)
+                {
+                     controller_loadFromBinary("data.bin" ,listaEmpleados);
+                     flag = 1;
+                }
+                else
+                    printMensaje();
                 break;
             case 3:
-                controller_addEmployee(listaEmpleados);
+                if(flag == 1)
+                    controller_addEmployee(listaEmpleados);
+                else
+                    printError();
                 break;
             case 4:
-                controller_editEmployee(listaEmpleados);
+                if(flag == 1)
+                    controller_editEmployee(listaEmpleados);
+                else
+                    printError();
                 break;
             case 5:
-                controller_removeEmployee(listaEmpleados);
+                if(flag == 1)
+                    controller_removeEmployee(listaEmpleados);
+                else
+                    printError();
                 break;
             case 6:
-                controller_ListEmployee(listaEmpleados);
+                if(flag == 1)
+                    controller_ListEmployee(listaEmpleados);
+                else
+                    printError();
                 break;
             case 7:
-                controller_sortEmployee(listaEmpleados);
+                if(flag == 1)
+                    controller_sortEmployee(listaEmpleados);
+                else
+                    printError();
                 break;
             case 8:
-                controller_saveAsText("data.csv",listaEmpleados);
+                if(flag == 1)
+                {
+                    printf("Guardar los datos de los empleados en el archivo data.csv (modo texto)\n");
+                    controller_saveAsText("data.csv",listaEmpleados);
+                    controller_saveAsBinary("data.bin",listaEmpleados);
+                    flag = 0;
+                }
+                else
+                    printError();
                 break;
             case 9:
-                controller_saveAsBinary("data.csv",listaEmpleados);
+                if(flag == 1)
+                {
+                    printf("Guardar los datos de los empleados en el archivo data.csv (modo binario).\n");
+                    controller_saveAsBinary("data.bin",listaEmpleados);
+                    controller_saveAsText("data.csv",listaEmpleados);
+                    flag = 0;
+                }
+                else
+                    printError();
                 break;
             case 10:
                 printf("salir\n");
@@ -62,20 +105,6 @@ int main()
         system("pause");
         system("cls");
     }while(option != 10);
-    /*
-    char* sueldo;
-    char* horas;
-    char* nombre;
-    print();
 
-    Employee* persona;
-    Employee p;
-    persona = &p;
-    if((persona = employee_newParametros("2",nombre,sueldo,horas))!=NULL)
-    {
-        printf("%s-%d-%d",persona->nombre,persona->sueldo,persona->horasTrabajadas);
-    }
-    //printf("%s - %s",persona->nombre,nombre);
-    */
     return 0;
 }

@@ -32,6 +32,9 @@ int ordenarPorId(void* emp1 , void* emp2);
 int ordenarPorNombre(void* empleado1 , void* empleado2);
 int ordenarPorHoras(void* emp1 , void* emp2);
 int ordenarPorSueldo(void* emp1,void* emp2);
+void printError(void);
+void printMensaje(void);
+
 
 
 #endif // employee_H_INCLUDED

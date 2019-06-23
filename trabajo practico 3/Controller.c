@@ -104,6 +104,8 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
     printEmployee(aux);
     ll_add(pArrayListEmployee,aux);
     printf("El id %d fue agregado\n",id);
+    int tam;
+    tam = ll_len(pArrayListEmployee);
     return 1;
 }
 
@@ -219,7 +221,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
         return 0;
     }
     ll_remove(pArrayListEmployee,j);
-    printf("El id %d fue borrado\n",j);
+    printf("El id %d fue borrado\n",j + 1);
     return 1;
 }
 
@@ -304,7 +306,31 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
  */
 int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
 {
-    printf("Guardar los datos de los empleados en el archivo data.csv (modo texto)\n");
+    ll_sort(pArrayListEmployee,ordenarPorId,1);
+    FILE* fp;
+    fp = fopen(path , "w");
+    if(fp == NULL)
+    {
+        printf("no se ha podido abrir el archivo\n");
+        exit(EXIT_FAILURE);
+    }
+    else
+    {
+        int len;
+        int i;
+        Employee* emp;
+        fprintf(fp,"Id,Nombre,Horas trabajadas,sueldo\n");
+        len = ll_len(pArrayListEmployee);
+        for(i = 0 ; i < len ; i++)
+        {
+            emp = employee_new();
+            emp = ll_get(pArrayListEmployee,i);
+            fprintf(fp,"%d,%s,%d,%d\n",emp->id,emp->nombre,emp->horasTrabajadas,emp->sueldo);
+        }
+        fclose(fp);
+        ll_clear(pArrayListEmployee);
+
+    }
     return 1;
 }
 
@@ -317,7 +343,29 @@ int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
  */
 int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
 {
-    printf("Guardar los datos de los empleados en el archivo data.csv (modo binario).\n");
+    ll_sort(pArrayListEmployee,ordenarPorId,1);
+    FILE* fp;
+    fp = fopen(path,"wb");
+    int i;
+    Employee* emp;
+    int len;
+    len = ll_len(pArrayListEmployee);
+    if(fp == NULL)
+    {
+        printf("no se pudo abrir el archivo\n");
+        exit(EXIT_FAILURE);
+    }
+    else
+    {
+;
+        for(i = 0 ; i < len ; i++)
+        {
+            emp = ll_get(pArrayListEmployee,i);
+            fwrite(emp,sizeof(Employee),1,fp);
+        }
+        fclose(fp);
+    }
+    ll_clear(pArrayListEmployee);
     return 1;
 }
 
