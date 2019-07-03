@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1562178204 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\ejercicio para el tp 4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"bibloteca.h"
+	"LinkedList.h"
+	"employee.h"
+	"controller.h"
+
+1562179073 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\ejercicio para el tp 4\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"bibloteca.h"
+	"LinkedList.h"
+	"employee.h"
+	"controller.h"
+
+1562179891 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\ejercicio para el tp 4\employee.c
+	<stdio.h>
+	<stdlib.h>
+	"bibloteca.h"
+	"LinkedList.h"
+	"employee.h"
+	"controller.h"
+
+1562178372 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\ejercicio para el tp 4\bibloteca.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+	"bibloteca.h"
+
+1561997370 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\ejercicio para el tp 4\linkedlist.h
+
+1562180428 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\ejercicio para el tp 4\controller.h
+
+1562179875 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\ejercicio para el tp 4\employee.h
+
+1561997369 c:\users\sopelan1\desktop\utn\tp_laboratorio_1\ejercicio para el tp 4\bibloteca.h
+	<string.h>
+	"time.h"
+
+1562179073 source:c:\users\sopelan1\desktop\utn\tp_laboratorio_1\ejercicio para el tp 4\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
